@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="register">
+            <h2>Registro</h2>
+            <form action="#" method="POST">
+                <!-- Nombre de Usuario -->
+                <div class="form-group">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="15" pattern="^[a-zA-Z0-9_]+$" title="El nombre de usuario solo puede contener letras, números y guiones bajos.">
+                    <span class="error-message">Debe tener entre 3 y 15 caracteres.</span>
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message">Debe ingresar un correo electrónico válido.</span>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required minlength="8" title="La contraseña debe tener al menos 8 caracteres.">
+                    <span class="error-message">Debe tener al menos 8 caracteres.</span>
+                </div>
+
+                <!-- Confirmar Contraseña -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" title="La contraseña debe coincidir.">
+                    <span class="error-message">Debe coincidir con la contraseña anterior.</span>
+                </div>
+
+                <!-- Nombre Completo -->
+                <div class="form-group">
+                    <label for="fullName">Nombre completo:</label>
+                    <input type="text" id="fullName" name="fullName" required maxlength="50" pattern="^[a-zA-Z\s]+$" title="El nombre solo puede contener letras y espacios.">
+                    <span class="error-message">Debe ingresar su nombre completo.</span>
+                </div>
+
+                <!-- Número de Teléfono -->
+                <div class="form-group">
+                    <label for="phone">Número de teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" title="Debe ingresar un número de teléfono válido de 10 dígitos.">
+                    <span class="error-message">Debe ser un número de 10 dígitos.</span>
+                </div>
+
+                <!-- Fecha de Nacimiento -->
+                <div class="form-group">
+                    <label for="dob">Fecha de nacimiento:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <span class="error-message">Debe ingresar su fecha de nacimiento.</span>
+                </div>
+
+                <!-- Género -->
+                <div class="form-group">
+                    <label for="gender">Género:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Seleccione su género</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                        <option value="other">Otro</option>
+                    </select>
+                    <span class="error-message">Debe seleccionar su género.</span>
+                </div>
+
+                <!-- Dirección -->
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required maxlength="100" title="Debe ingresar su dirección.">
+                    <span class="error-message">Debe ingresar su dirección.</span>
+                </div>
+
+                <!-- Botón de Envío -->
+                <div class="form-group">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
