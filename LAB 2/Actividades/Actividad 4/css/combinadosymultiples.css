@@ -1,0 +1,63 @@
+:root {
+	--verde: rgb(16, 182, 38);
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bodoni MT Black', sans-serif;
+	font-weight: normal;
+	font-size: 48px;
+	margin-right: 23cm;
+    padding-left: 2cm;
+    display: inline-block;
+	color: var(--verde);
+
+	text-shadow: 
+    -1px -1px 0 #7fff00, /* Arriba izquierda */
+    1px -1px 0 #7fff00,  /* Arriba derecha */
+    -1px 1px 0 #7fff00,  /* Abajo izquierda */
+    1px 1px 0 #7fff00;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}

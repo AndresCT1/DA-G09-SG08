@@ -1,0 +1,8 @@
+/* Reglas regex simuladas y otros estilos adicionales */
+header nav a[href^="https://"] {
+    color: #00f; /* Ejemplo: enlaces que comienzan con "https://" */
+}
+
+header nav a[href*="restaurante"] {
+    font-weight: bold; /* Ejemplo: enlaces que contienen la palabra "restaurante" */
+}
