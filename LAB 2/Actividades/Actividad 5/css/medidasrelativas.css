@@ -1,0 +1,125 @@
+/* medidasrelativas.css */
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%; /* Medida relativa */
+    height: 100vh; /* Medida relativa */
+    margin: 0 auto;
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 90%; /* Medida relativa */
+    margin: auto;
+}
+
+header {
+    padding: 2rem; /* Medida relativa */
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 2.5rem; /* Medida relativa */
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 1.25rem; /* Medida relativa */
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: #FFF;
+}
+
+.pelicula-principal {
+    font-size: 1rem; /* Medida relativa */
+    min-height: 60vh; /* Medida relativa */
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/backdrop.jpg); 
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3rem; /* Medida relativa */
+    display: flex;
+    align-items: end;
+}
+
+.pelicula-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6rem; /* Medida relativa */
+}
+
+.pelicula-principal .titulo {
+    font-weight: 600;
+    font-size: 3vw; /* Medida relativa */
+    margin-bottom: 0.5rem; /* Medida relativa */
+}
+
+.pelicula-principal .descripcion {
+    font-weight: normal;
+    font-size: 1.2rem; /* Medida relativa */
+    line-height: 1.75em;
+    max-width: 50%; /* Medida relativa */
+    margin-bottom: 1.25rem; /* Medida relativa */
+}
+
+.pelicula-principal .boton {
+    background: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31rem; /* Medida relativa */
+    padding: 0.93rem 1.87rem; /* Medida relativa */
+    color: #fff;
+    margin-right: 1.25rem; /* Medida relativa */
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12rem; /* Medida relativa */
+}
+
+.pelicula-principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.pelicula-principal .boton i {
+    margin-right: 1.25rem; /* Medida relativa */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media screen and (max-width: 800px) {
+    header .logotipo {
+        margin-bottom: 10px;
+        font-size: 2rem; /* Medida relativa */
+    }
+
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pelicula-principal {
+        font-size: 0.875rem; /* Medida relativa */
+    }
+
+    .pelicula-principal .descripcion {
+        max-width: 100%; /* Medida relativa */
+    }
+}

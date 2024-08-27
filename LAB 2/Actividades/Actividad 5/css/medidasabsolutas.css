@@ -1,0 +1,36 @@
+/* medidasabsolutas.css */
+body {
+    width: 1024px; /* Medida absoluta en píxeles */
+    height: 768px; /* Medida absoluta en píxeles */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 30px; /* Medida absoluta en píxeles */
+}
+
+header .logotipo {
+    font-size: 40px; /* Medida absoluta en píxeles */
+}
+
+.pelicula-principal {
+    width: 500px; /* Medida absoluta en píxeles */
+    height: 600px; /* Medida absoluta en píxeles */
+    margin-bottom: 50px; /* Medida absoluta en píxeles */
+}
+
+.pelicula-principal .titulo {
+    font-size: 50px; /* Medida absoluta en píxeles */
+}
+
+.pelicula-principal .descripcion {
+    font-size: 18px; /* Medida absoluta en píxeles */
+    max-width: 400px; /* Medida absoluta en píxeles */
+}
+
+.pelicula-principal .boton {
+    padding: 10px 20px; /* Medidas absolutas en píxeles */
+    font-size: 18px; /* Medida absoluta en píxeles */
+}
