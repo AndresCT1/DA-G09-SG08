@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 2</title>
+    <link rel="stylesheet" href="clase.css">
+</head>
+<body class="cuerpo">
+    <header>
+        <h1 class="titulo-principal">Bienvenido a Wikipedia</h1>
+        <nav>
+            <ul class="lista">
+                <li class="elemento-lista"><a href="#seccion1">Bienvenido</a></li>
+                <li class="elemento-lista"><a href="#seccion2">Actualidad</a></li>
+                <li class="elemento-lista"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="seccion1">
+            <h2 class="titulo-seccion">Bienvenido</h2>
+            <p class="parrafo">Bienvenidos a Wikipedia, la enciclopedia de contenido libre que todos pueden editar.</p>
+            <p class="parrafo">1 974 989 artículos en español.</p>
+            <ul class="lista">
+                <li class="elemento-lista"><a href="http://">Primeros pasos</a></li>
+                <li class="elemento-lista"><a href="http://">¿Cómo colaborar?</a></li>
+                <li class="elemento-lista"><a href="http://">Ayuda</a></li>
+            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3LzxgPuA8YiQIhpIhwUWtw_KG6hgQ9WeeQ&s" alt="Imagen de ejemplo" class="imagen">
+        </section>
+
+        <section id="seccion2">
+            <h2 class="titulo-seccion">Actualidad</h2>
+            <p class="parrafo">Puede que te interese alguno de estos temas</p>
+            <table class="tabla">
+                <tbody>
+                    <tr>
+                        <td class="celda-tabla"><a href="http://">Guerra Israel-Gaza</a></td>
+                        <td class="celda-tabla"><a href="http://">Invasión rusa de Ucrania</a></td>
+                        <td class="celda-tabla"><a href="http://">Brote de viruela símica</a></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="celda-tabla"><a href="http://">Protestas tras las elecciones</a></td>
+                        <td class="celda-tabla"><a href="http://">Juegos Paralímpicos</a></td>
+                        <td class="celda-tabla"><a href="http://">Campeonato Sudamericano</a></td>
+                    </tr>
+                    <tr>
+                        <td class="celda-tabla"><a href="http://">Campeonato Mundial</a></td>
+                        <td class="celda-tabla"><a href="http://">Abierto de Estados Unidos</a></td>
+                        <td class="celda-tabla"><a href="http://">Vuelta a España</a></td>
+                    </tr>
+                    <tr>
+                        <td class="celda-tabla"><a href="http://">Vuelta a España</a></td>
+                        <td class="celda-tabla"><a href="http://">Día de Namibia</a></td>
+                        <td class="celda-tabla"><a href="http://">Eclipse lunar de septiembre</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <p class="parrafo">Si deseas más información, rellena el siguiente formulario:</p>
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="input-texto"><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="input-email"><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" class="textarea"></textarea><br><br>
+
+                <input type="submit" value="Enviar" class="boton-enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2024 Wikipedia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
