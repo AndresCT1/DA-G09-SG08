@@ -1,0 +1,71 @@
+/* Estilos generales */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Century Gothic, sans-serif;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Pseudo-clase :hover para enlaces */
+a:hover {
+	color: #c91212;
+	text-decoration: underline;
+}
+
+/* Pseudo-clase :active para enlaces */
+a:active {
+	color: #d84a4a;
+}
+
+/* Pseudo-clase :visited para enlaces */
+a:visited {
+	color: #6a0e0a;
+}
+
+/* Pseudo-clase :focus para elementos de formulario */
+input:focus, textarea:focus {
+	border: 2px solid #c91212;
+	outline: none;
+}
+
+/* Pseudo-clase :nth-child() para estilizar los elementos de la lista */
+nav ul li:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+nav ul li:nth-child(even) {
+	background-color: #e0e0e0;
+}
+
+/* Pseudo-clase :first-child para el primer elemento en un contenedor */
+.contenido > .articulo > div:first-child {
+	border: 2px solid #c91212;
+}
+
+/* Pseudo-clase :last-child para el último elemento en un contenedor */
+.contenido > .articulo > div:last-child {
+	margin-bottom: 0;
+}
+
+/* Pseudo-clase :nth-of-type() para elementos de un tipo específico */
+.contenido .articulo div:nth-of-type(2) {
+	background-color: #fffcf9;
+}
+
+/* Pseudo-clase :not() para elementos que no tienen una clase específica */
+p:not(.secundario p) {
+	margin-bottom: 20px;
+}
+
+/* Pseudo-clase :empty para elementos vacíos */
+p:empty {
+	display: none;
+}
+
+/* Pseudo-clase :disabled para elementos de formulario deshabilitados */
+input:disabled, textarea:disabled {
+	background-color: #e0e0e0;
+	cursor: not-allowed;
+}

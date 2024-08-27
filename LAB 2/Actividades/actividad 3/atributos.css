@@ -1,0 +1,73 @@
+/* Estilos generales */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Century Gothic, sans-serif;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Estilo para elementos con atributo title */
+[title] {
+	color: #c91212;
+}
+
+nav ul {
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	list-style-type: none;
+	background-color: #c91212;
+}
+
+nav li {
+	display: inline-flex;
+}
+
+nav a {
+	padding: 20px;
+	width: 150px;
+}
+
+nav ul a:hover {
+	background-color: white;
+}
+/* Estilo para enlaces que contienen "Inicio" en el atributo href */
+a[href*="Inicio"] {
+	font-weight: bold;
+}
+
+/* Estilo para imágenes que contienen "2024/08/26" en el atributo src */
+img[src*="2024/08/26"] {
+	border: 5px solid #c91212;
+	border-radius: 15px;
+}
+
+/* Estilo para párrafos dentro de la clase "secundario" */
+.secundario p {
+	background-color: #cd853f;
+	border-radius: 15px;
+	padding: 20px;
+	height: 500px;
+}
+
+/* Estilo para el elemento con clase "titulo" */
+.titulo h1 {
+	font-weight: bold;
+	font-size: 128px;
+	color: #c91212;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para la primera fila dentro de la clase "secundario" */
+.secundario tr:first-of-type {
+	background-color: #f0f0f0;
+}
+
+/* Estilo para párrafos dentro de la clase "secundario" que contienen "HIMNO NACIONAL DEL PERÚ" */
+.secundario p {
+	font-weight: bold;
+	font-size: 20px;
+}
+

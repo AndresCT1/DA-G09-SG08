@@ -1,0 +1,71 @@
+/* Estilos generales */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Century Gothic, sans-serif;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Pseudo-elemento ::before para añadir contenido antes de un elemento */
+.titulo h1::before {
+	content: "🏆 ";
+	color: #c91212;
+	font-size: 1.5em;
+}
+
+/* Pseudo-elemento ::after para añadir contenido después de un elemento */
+.titulo h1::after {
+	content: " 🏅";
+	color: #c91212;
+	font-size: 1.5em;
+}
+
+/* Pseudo-elemento ::first-line para estilizar la primera línea de un párrafo */
+p::first-line {
+	font-weight: bold;
+	color: #c91212;
+}
+
+/* Pseudo-elemento ::first-letter para estilizar la primera letra de un párrafo */
+p::first-letter {
+	font-size: 2em;
+	color: #c91212;
+	font-weight: bold;
+}
+
+/* Pseudo-elemento ::selection para estilizar el texto seleccionado */
+::selection {
+	background-color: #c91212;
+	color: white;
+}
+
+/* Pseudo-elemento ::placeholder para estilizar el texto del placeholder en inputs */
+input::placeholder {
+	color: #888;
+	font-style: italic;
+}
+
+/* Pseudo-elemento ::marker para estilizar los marcadores en listas */
+ul::marker {
+	color: #c91212;
+	font-size: 1.2em;
+}
+
+/* Pseudo-elemento ::backdrop para estilizar el fondo de un elemento modal (utilizado en elementos <dialog>) */
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Pseudo-elemento ::cue para estilizar los subtítulos en vídeos */
+video::cue {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+}
+
+/* Pseudo-elemento ::cue-before para añadir contenido antes de los subtítulos en vídeos */
+video::cue-before {
+	content: "🔊 ";
+	color: #c91212;
+}
