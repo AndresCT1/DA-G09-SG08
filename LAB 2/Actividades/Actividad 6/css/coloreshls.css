@@ -1,0 +1,13 @@
+/* coloreshls.css */
+body {
+    background-color: hsl(0, 0%, 0%); /* Color negro con HSL */
+    color: hsl(0, 0%, 100%); /* Color blanco con HSL */
+}
+
+header .logotipo {
+    color: hsl(0, 100%, 50%); /* Color rojo con HSL */
+}
+
+header nav a {
+    color: hsl(0, 0%, 50%); /* Color gris con HSL */
+}

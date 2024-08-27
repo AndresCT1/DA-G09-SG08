@@ -1,0 +1,13 @@
+/* coloreshexadecimal.css */
+body {
+    background-color: #000000; /* Color negro hexadecimal */
+    color: #ffffff; /* Color blanco hexadecimal */
+}
+
+header .logotipo {
+    color: #ff0000; /* Color rojo hexadecimal */
+}
+
+header nav a {
+    color: #808080; /* Color gris hexadecimal */
+}
