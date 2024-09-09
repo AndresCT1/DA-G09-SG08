@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> MI IMAGEN </title>
+<style>
+  /* Estilo para el contenedor de la imagen */
+  .image-container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrar el contenedor */
+    border: 2px solid #ddd; /* Borde alrededor de la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+  }
+
+  /* Estilo para la imagen */
+  img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta cómo se redimensiona la imagen */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+  }
+
+  /* Efecto hover en la imagen */
+  img:hover {
+    transform: scale(1.05); /* Escala la imagen al pasar el mouse */
+  }
+  h1 {
+  	font-size: 50px;
+  	color: #333;
+  	margin-bottom: 10px;
+    text-align: center;
+	}
+</style>
+</head>
+<body>
+<h1> MI IMAGEN</h1>
+<div class="image-container">
+  <img src="img_chania.jpg" alt="Chania">
+</div>
+<p>Resize the browser window to see how the image will scale.</p>
+
+</body>
+</html>
