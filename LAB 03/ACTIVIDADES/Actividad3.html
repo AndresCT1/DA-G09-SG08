@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<style>
+  .item1 { 
+    grid-area: header; 
+    background-color: #ff5722; /* Color del encabezado */
+  }
+
+  .item2 { 
+    grid-area: menu; 
+    background-color: #009688; /* Color del menú */
+  }
+
+  .item3 { 
+    grid-area: main; 
+    background-color: #3f51b5; /* Color del contenido principal */
+  }
+
+  .item4 { 
+    grid-area: right; 
+    background-color: #ffc107; /* Color de la columna derecha */
+  }
+
+  .item5 { 
+    grid-area: footer; 
+    background-color: #607d8b; /* Color del pie de página */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #eeeeee; /* Color de fondo del contenedor */
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    color: #ffffff; /* Color del texto en los elementos */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+
+  h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Una Plantilla de Página Web</h1>
+
+<p>Puedes usar la propiedad <em>grid-area</em> para nombrar elementos de la cuadrícula.</p>
+<p>Puede referirse al nombre al configurar el diseño de la cuadrícula, usando la propiedad <em>grid-template</em> en el contenedor de la cuadrícula.</p>
+<p>Este diseño de cuadrícula contiene seis columnas y tres filas:</p>
+
+<div class="grid-container">
+  <div class="item1">Encabezado</div>
+  <div class="item2">Menú</div>
+  <div class="item3">Principal</div>  
+  <div class="item4">Derecha</div>
+  <div class="item5">Pie de página</div>
+</div>
+
+</body>
+</html>
