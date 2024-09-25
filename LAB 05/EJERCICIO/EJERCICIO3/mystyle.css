@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  header img.rounded-circle {
+    border: 2px solid #007bff;
+  }
+  
+  header nav ul.nav li a.nav-link {
+    color: #007bff;
+  }
+  
+  header nav ul.nav li a.nav-link:hover {
+    color: #0056b3;
+  }
+  
+  #portfolio h2 {
+    color: #007bff;
+  }
+  
+  #portfolio .row {
+    margin-top: 30px;
+  }
+  
+  #portfolio .row img {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #portfolio .row img:hover {
+    transform: scale(1.05);
+  }
+  
+  #about h2 {
+    color: #007bff;
+  }
+  
+  #about p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

@@ -1,0 +1,89 @@
+// Variables para colores
+$primary-color: #007bff;
+$background-color: #f8f9fa;
+$header-bg: #f5f5f5;
+$footer-bg: #333;
+$footer-text-color: #fff;
+
+// Tipografía y tamaños
+$font-main: 'Arial', sans-serif;
+$header-font-size: 2.5rem;
+$portfolio-image-size: 100%;
+
+// Estilos globales
+body {
+  font-family: $font-main;
+  background-color: $background-color;
+  color: #333;
+}
+
+// Estilos del encabezado
+header {
+  background-color: $header-bg;
+  padding: 20px 0;
+
+  h1 {
+    font-size: $header-font-size;
+    color: $primary-color;
+  }
+
+  img.rounded-circle {
+    border: 2px solid $primary-color;
+  }
+
+  nav ul.nav {
+    li {
+      a.nav-link {
+        color: $primary-color;
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+// Estilos para la sección "Portfolio"
+#portfolio {
+  h2 {
+    color: $primary-color;
+  }
+
+  .row {
+    margin-top: 30px;
+
+    img {
+      width: $portfolio-image-size;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Estilos para la sección "About"
+#about {
+  h2 {
+    color: $primary-color;
+  }
+
+  p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+}
+
+// Estilos para el pie de página
+footer {
+  background-color: $footer-bg;
+  color: $footer-text-color;
+  padding: 20px;
+
+  p {
+    margin: 0;
+  }
+}
