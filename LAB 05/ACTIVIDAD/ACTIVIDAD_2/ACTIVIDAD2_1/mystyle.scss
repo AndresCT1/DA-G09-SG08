@@ -1,0 +1,26 @@
+// Variables
+$myFont: 'Courier New', Courier, monospace;  // Cambio de fuente a Courier New
+$myColor: #3498db;  // Cambio de color a un azul (#3498db)
+$myFontSize: 20px;  // Cambio del tamaño de fuente a 20px
+$myWidth: 680px;
+$myBorderColor: green;  // Cambio del color de borde a verde
+$myBorderStyle: solid;
+
+// Estilos globales para el body
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  text-align: center;  // Centrando el texto
+}
+
+// Estilos para el contenedor
+#container {
+  width: $myWidth;
+  border: 2px $myBorderColor $myBorderStyle;  // Borde sólido y más grueso
+  padding: 20px;
+  background-color: #f9f9f9;  // Fondo gris muy claro
+  border-radius: 15px;  // Bordes más redondeados
+  margin: 0 auto;  // Centrar el contenedor
+  text-align: center;  // Centrando el texto dentro del contenedor
+}

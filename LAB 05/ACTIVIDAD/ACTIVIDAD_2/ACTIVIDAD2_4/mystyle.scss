@@ -1,0 +1,30 @@
+/* Define mixin with two arguments */
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+  }
+  
+  /* Global styles */
+  $myFont: 'Verdana', sans-serif;  // Cambié la fuente a Verdana
+  $myFontSize: 20px;  // Aumenté el tamaño de la fuente a 20px
+  $myColor: #333;  // Cambié el color a gris oscuro
+  
+  body {
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+    text-align: center;  // Centrando el contenido
+    padding: 20px;
+  }
+  
+  .myArticle {
+    @include bordered(blue, 2px);  // Borde azul más grueso
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .myNotes {
+    @include bordered(red, 2px);  // Borde rojo
+    padding: 10px;
+    margin: 10px;
+  }
+  

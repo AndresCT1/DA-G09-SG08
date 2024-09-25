@@ -1,0 +1,58 @@
+// Variables
+$myFont: 'Arial', sans-serif;
+$myFontSize: 20px;
+$myColor: #2c3e50; // Color gris oscuro
+$bgColor: #f1c40f; // Fondo amarillo para los enlaces
+
+nav {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  text-align: center; // Centrando el menú
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 10px;
+
+      a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: $myColor; // Cambié el color del texto
+        background-color: $bgColor; // Fondo amarillo
+        border-radius: 5px; // Bordes redondeados
+        font-weight: bold;
+        &:hover {
+          background-color: darken($bgColor, 10%); // Cambia el color al pasar el ratón
+        }
+      }
+    }
+  }
+}
+
+// Estilo para la tabla
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 60%;
+  font-family: $myFont;
+
+  th, td {
+    padding: 12px;
+    border: 1px solid $myColor;
+    text-align: center;
+  }
+
+  th {
+    background-color: $myColor;
+    color: white;
+  }
+
+  td {
+    background-color: lighten($myColor, 40%);
+  }
+}
