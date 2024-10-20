@@ -1,0 +1,21 @@
+.barra-busqueda {
+    margin: 20px;
+  }
+  
+  .enlaces-productos {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .enlaces-productos a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .enlaces-productos a:hover {
+    background-color: #0056b3;
+  }

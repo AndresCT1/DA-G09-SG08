@@ -1,0 +1,21 @@
+.barra-navegacion {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .barra-navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .barra-navegacion ul li {
+    padding: 14px 20px;
+  }
+  
+  .barra-navegacion ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
