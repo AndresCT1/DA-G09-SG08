@@ -1,0 +1,27 @@
+.contenedor-platos, .contenedor-lugares, .contenedor-tradiciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .plato, .lugar, .tradicion {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .plato img, .lugar img, .tradicion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+  }
+  
+  h2 {
+    color: #d84315;
+  }
+  
