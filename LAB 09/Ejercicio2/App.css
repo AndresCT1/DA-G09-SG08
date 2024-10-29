@@ -1,0 +1,64 @@
+/* src/styles/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.title {
+  color: #333;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.home, .especialidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.link-button:hover {
+  background-color: #0056b3;
+}
+
+.especialidades-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.especialidad-item {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.especialidad-item h3 {
+  color: #444;
+}
+
+.especialidad-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.especialidad-item li {
+  margin: 5px 0;
+}
+
+.archivo-contenido {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 600px;
+}
