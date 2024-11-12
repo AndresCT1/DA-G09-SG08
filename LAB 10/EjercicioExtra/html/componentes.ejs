@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Shop - Componentes</title>
+    <style>
+        /* Estilos para el spinner de carga */
+        #loadingSpinner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+
+        .imagen-componente {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <h1>Componentes en PC Shop</h1>
+        <p>Encuentra los mejores componentes para ensamblar o actualizar tu computadora.</p>
+    </header>
+
+    <section>
+        <h2>Nuestros Componentes</h2>
+        <div>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXTWDqQx9cS2uAhol_yIeYO1PT56RsIS9MA&s" class="imagen-componente">
+                <figcaption>Procesador Intel Core i9</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i0.wp.com/rayotec.pe/wp-content/uploads/2024/01/40608.jpg?fit=600%2C600&ssl=1" class="imagen-componente">
+                <figcaption>Tarjeta gráfica NVIDIA RTX</figcaption>
+            </figure>
+            <figure>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_908774-MPE70482462792_072023-O.webp" class="imagen-componente">
+                <figcaption>Memoria RAM Corsair 16GB</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("load", function() {
+            document.getElementById("loadingSpinner").style.display = "none";
+        });
+    </script>
+</body>
+</html>

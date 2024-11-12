@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Shop - Computadoras</title>
+    <style>
+        /* Estilos para el spinner de carga */
+        #loadingSpinner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+
+        .imagen-computadora {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <h1>Computadoras en PC Shop</h1>
+        <p>Descubre nuestras computadoras de alta calidad, desde laptops hasta PCs de escritorio.</p>
+    </header>
+
+    <section>
+        <h2>Nuestras Computadoras</h2>
+        <div>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EurPW0_G40VMiDGWljJ62Y1yreszvbIMPQ&s" class="imagen-computadora">
+                <figcaption>HP Pavilion - Laptop para trabajo y estudio</figcaption>
+            </figure>
+            <figure>
+                <img src="https://m.media-amazon.com/images/I/811QpiYXe-L._AC_SL1500_.jpg" class="imagen-computadora">
+                <figcaption>PC Gamer ASUS</figcaption>
+            </figure>
+            <figure>
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/15313925/image-62959eb5b0934172bb82d67341f11cba.jpg?v=638281854416130000" class="imagen-computadora">
+                <figcaption>Lenovo ThinkPad X1</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("load", function() {
+            document.getElementById("loadingSpinner").style.display = "none";
+        });
+    </script>
+</body>
+</html>
